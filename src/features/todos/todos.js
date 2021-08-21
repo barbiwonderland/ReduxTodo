@@ -17,7 +17,7 @@ function Todos() {
             
             {x}
             <a
-              onClick={() => dispatch(del({ index }))}
+              onClick={() => dispatch(del( index ))}
               className="text-success mx-2 "
             >
               <BiCheckDouble size={"1.5rem"} />
