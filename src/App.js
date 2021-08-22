@@ -5,7 +5,7 @@ import Todos from "./features/todos/todos";
 // import Posts from './features/posts/Posts'
 // import Users from './features/users/Users'
 import { add } from "./features/todos/todoSlice";
-import { Footer } from "rsuite";
+import  Footer  from "./components/footer";
 
 function App() {
   const [todoTxt, setTodoTxt] = useState("");
