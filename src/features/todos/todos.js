@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectTodos, del } from "./todoSlice";
-import { BiCheckDouble } from "react-icons/bi";
-import {RiSubtractLine} from "react-icons/ri"
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 function Todos() {
   const dispatch = useDispatch();
   const todos = useSelector(selectTodos);
@@ -12,15 +11,15 @@ function Todos() {
     todos.map((x, index) => (
       <>
        
-          <div bordered key={index} className=" text-capitalize text-light m-2 p-2 border bg-muted rounded">
-            < RiSubtractLine className=" text-white me-2"></RiSubtractLine>
+          <div bordered key={index} className=" text-capitalize text-light m-2 p-2 border  rounded">
+            {/* < RiSubtractLine className=" text-white me-2"></RiSubtractLine> */}
             
-            {x}
+           {x}
             <a
               onClick={() => dispatch(del( index ))}
-              className="text-success mx-2 "
+              className="text-success float-end ms-5  "
             >
-              <BiCheckDouble size={"1.5rem"} />
+              <IoMdCheckmarkCircleOutline size={"1.5rem"} />
             </a>
           </div>
       

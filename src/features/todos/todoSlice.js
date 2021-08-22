@@ -12,6 +12,9 @@ const todoSlice = createSlice({
     del(state, { payload: index }) {
       state.splice(index, 1)
     },
+    edit(){
+      
+    }
   },
 });
 // todos viene del store
